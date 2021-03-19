@@ -45,7 +45,7 @@ tmp<volScalarField> GReWA<BasicTurbulenceModel>::chi() const
 template<class BasicTurbulenceModel>
 tmp<volScalarField> GReWA<BasicTurbulenceModel>::Rt() const
 {
-    return (this->rho_*Rnu_)/(this->mu());
+    return (this->rho_*Rnu_)/(this->mu());/*(this->mut())/(this->mu())*/
 }
 
 template<class BasicTurbulenceModel>
